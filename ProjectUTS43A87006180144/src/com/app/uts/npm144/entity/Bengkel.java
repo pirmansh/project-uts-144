@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.app.uts.npm144;
+package com.app.uts.npm144.entity;
 
 /**
  *
@@ -57,8 +57,4 @@ public class Bengkel {
     public void setHarga_servis(String harga_servis) {
         this.harga_servis = harga_servis;
     }
-    
-    
 }
-
-

@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.app.uts.npm144;
+package com.app.uts.npm144.entity;
 
+import com.app.uts.npm144.ConnectionUtil;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -16,7 +17,7 @@ import java.util.List;
  * @author pirmansyah
  */
 public class BengkelModel {
-    private Connection connection;
+        private Connection connection;
     
     public BengkelModel(){
         connection = ConnectionUtil.getConnection();

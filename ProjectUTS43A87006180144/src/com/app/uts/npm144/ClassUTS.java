@@ -5,6 +5,9 @@
  */
 package com.app.uts.npm144;
 
+import com.app.uts.npm144.entity.Bengkel;
+import com.app.uts.npm144.entity.BengkelModel;
+
 /**
  *
  * @author pirmansyah
@@ -32,11 +35,11 @@ public class ClassUTS {
     public void bengkelInsert(){
 
         Bengkel bk = new Bengkel();
-        bk.setIdServis("33333");
-        bk.setNamaServis("Platinum");
-        bk.setMerkKendaraan("Nmax");
-        bk.setPemilik("Hamba");
-        bk.setHarga_servis("400000");
+        bk.setIdServis("11111");
+        bk.setNamaServis("Silver");
+        bk.setMerkKendaraan("Honda Vario");
+        bk.setPemilik("Pirmansyah");
+        bk.setHarga_servis("500000");
         boolean sukses = bengkel.insert(bk);
 
         if(sukses) {
@@ -49,8 +52,8 @@ public class ClassUTS {
 
     public void bengkelUpdate(){
 
-        Bengkel bk = bengkel.getByID("22222");
-        bk.setPemilik("Pirman");
+        Bengkel bk = bengkel.getByID("44444");
+        bk.setPemilik("Akmal Kamal");
         boolean sukses = bengkel.update(bk);
         if(sukses) {
             System.out.println("Update Data Berhasil!");
@@ -60,7 +63,7 @@ public class ClassUTS {
     }
     public void bengkelDelete(){
 
-        Bengkel bk = bengkel.getByID("33333");
+        Bengkel bk = bengkel.getByID("22222");
         boolean sukses = bengkel.delete(bk);
         if(sukses) {
             System.out.println("Delete Data Berhasil!");
